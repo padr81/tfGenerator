@@ -32,12 +32,12 @@ function merge() {
           newLayer.style.position = "absolute";
           newLayer.style.top = "0px";
           newLayer.style.left = "0px";
-          document.querySelector(".nparent").appendChild(newLayer);
-          downloadBtn.disabled = false;
-          downloadBtn.classList.remove("disabled");
-          downloadBtn.addEventListener('click', function() {
-            download(img, "merged.png", "image/png");
-          });
+          //document.querySelector(".parent").appendChild(newLayer);
+          //downloadBtn.disabled = false;
+          //downloadBtn.classList.remove("disabled");
+          //downloadBtn.addEventListener('click', function() {
+          //download(img, "merged.png", "image/png");
+          //});
         };
       };
     };
