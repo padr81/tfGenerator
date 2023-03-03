@@ -1,0 +1,60 @@
+body {
+    background-color: rgba(26, 13, 51, 0.623);
+    font-size: large;
+    color: aliceblue;
+    align-content: center;
+  }
+
+.superParent{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 2rem 2rem;
+  }
+
+.parent {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle
+  }
+  
+  .nparent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .headImage2 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+  }
+
+  .bodyImage {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+  .baseImage {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  
+.slider{
+    width: 70%;
+    align-items: center;
+}
+
+.sliders{
+    align-items: center;
+    justify-content: center;
+}

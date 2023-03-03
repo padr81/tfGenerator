@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  
+  </script>  
+  <script src="baseScript.js"></script>
+  <script src="bodyScript.js"></script>
+  <script src="headScript.js"></script>
+  <!--<script src="https://unpkg.com/merge-images"></script>-->
+  <title>Character Generator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="default.css">
+</head>
+
+<body>
+  <h1 class="superParent">Time Fantasy Styled Generator</h1>
+
+  <div class="sliders">
+    Base: <input type="range" class="slider" min="1" max="14" value="1" id="baseSlider" name="baseSlider" > 
+    <br>
+    Body: <input type="range" class="slider" min="1" max="30" value="1" id="bodySlider" name="bodySlider" > 
+    <br>
+    Head: <input type="range" class="slider" min="1" max="61" value="1" id="headSlider" name="headSlider" >
+  </div>
+
+  
+
+  <div class="superParent">
+    
+    <div class="parent">
+
+      <div class="nparent">
+        <img style="z-index:2;" id='formula3' name="formula3" class="baseImage" src='img/bases/base1.png' />
+        <img style="z-index:3;" id='formula' name="formula" class="bodyImage" src='img/bodies/body1.png' />
+        <img style="z-index:4;" id='formula2' name="formula2"class="headImage" src="img/heads/head1.png" />
+        <br>
+        <button type="button" id="dlbutton" >Generate Sprite</button>
+        <button type="button" id="dlbutton2">Download</button>
+
+      </div>
+
+    </div>
+
+    <div class="parent">
+      <canvas id="myCanvas" width="234" height="432">
+        Your browser does not support the canvas element.
+      </canvas>
+      <!--<script src="animation.js"></script>-->
+      <script src="mergeImages.js"></script>
+    </div>
+  </div>
+
+</body>
+</html>
